@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>DNP Home Responsive</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/js.js"></script>
+  <link rel="stylesheet" href="css/my-css.css"/>
+ 
+</head>
+<body>
+
+<div class="container">
+  <header id="header">
+		<div class="rows" id="closePrint" style="">
+				<div class="col-sm-4 content-head-left">
+					<div class="logo" >
+						<img src="img/h_logo.gif" alt="logo" />
+					</div>
+				</div>
+				<div class="col-sm-8 content-head-right">
+						<div class="col-sm-12 right-up">
+							<div class="col-sm-4 font-change">
+									<!--fontChange-->
+									<dt>文字サイズ</dt>
+									<dd><span id="fontChangeS" onclick="changeSize(13)" class="active" href="">小</span></dd>
+									<dd><span id="fontChangeM" onclick="changeSize(14)" href="">中</span></dd>
+									<dd><span id="fontChangeL" onclick="changeSize(15)" href="">大</span></dd>
+									
+									</dl>
+
+									<!--/fontChange-->
+							</div>
+							<div class="col-sm-8 search-bar">
+								<form id="" action="" method="" name="">
+									<ul>
+									  <li><input id="txtSearch" type="text" name="" size="" value="" placeholder="サイト内検索" /></li>
+									  <li><input type="image" class="submitSearch" src="img/btn_search_of.gif" alt="検索"></li>
+									</ul>
+								</form>
+							</div>
+							
+						</div>
+						<div class="col-sm-12 right-down">
+							<dt class="col-sm-4">
+							 印刷画面 <span class="glyphicon glyphicon-print" onclick="openPrint()"> </span>
+							</dt>
+							<ul class="col-sm-8">
+								<li><a href="" ><span class="glyphicon glyphicon-play"></span>ENGLISH</a></li>
+								<li><a href="" ><span class="glyphicon glyphicon-play"></span>お問い合わせ</a></li>
+								<li><a href="" ><span class="glyphicon glyphicon-play"></span>サイトマップ</a></li>
+							</ul>
+						</div>
+						
+				</div>
+			    <nav class="rows">
+					<ul style="">
+						<li style=""><a  href="" ><img onmouseover="changeNav('nav_01')" onmouseout="returnNav('nav_01')" id="nav_01" src="img/globalnav01_of.gif" /></a></li>
+						<li style=""><a  href="" ><img onmouseover="changeNav('nav_02')" onmouseout="returnNav('nav_02')"  id="nav_02" src="img/globalnav04_of.gif" /></a></li>
+						<li style=""><a  href="" ><img onmouseover="changeNav('nav_03')" onmouseout="returnNav('nav_03')"  id="nav_03" src="img/globalnav03_of.gif" /></a></li>
+						<li style=""><a  href="" ><img onmouseover="changeNav('nav_04')" onmouseout="returnNav('nav_04')"  id="nav_04" src="img/globalnav02_of.gif" /></a></li>
+						<li style=""><a  href="" ><img onmouseover="changeNav('nav_05')" onmouseout="returnNav('nav_05')"  id="nav_05" src="img/globalnav06_of.gif" /></a></li>
+					</ul>
+			    </nav>
+		</div>
+		<div class="rows" id="openPrint" style="padding: 20px 0 40px 0; display:none">
+						<li class="logo-print-li" style="display:inline; float:left"><a  href="" ><img src="img/logo-print.png" /></a></li>
+						<li style="display:inline; float:right" style="padding-top:10px"><img id="closeImg" onclick="closePrint()" onmouseover="changeClose()" onmouseout="returnClose()" src="img/btn_printback_of.gif" style="cursor:pointer" /></li>
+					
+		</div>
+	    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ul class="group-item">
+				  <li data-target="#myCarousel" data-slide-to="0" class="active"> <img src="img/vr_thum.png" alt="" ></li>
+				  <li data-target="#myCarousel" data-slide-to="1"> <img src="img/csr2016_thum.jpg" alt=""></li>
+				  <li data-target="#myCarousel" data-slide-to="2"> <img src="img/top_btn_gim.gif" alt=""></li>
+				  <li data-target="#myCarousel" data-slide-to="3"> <img src="img/digicom_thum.jpg" alt="" ></li>
+				</ul>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+				  <div class="item active">
+					<img src="img/vr_main.png" alt="" width="" height="">
+				  </div>
+
+				  <div class="item">
+					<img src="img/csr2016_main.jpg" alt="" width="" height="">
+				  </div>
+				
+				  <div class="item">
+					<img src="img/top_main_gim.gif" alt="" width="" height="">
+				  </div>
+
+				  <div class="item">
+					<img src="img/digicom_main.jpg" alt="" width="" height="">
+				  </div>
+				</div>
+
+				<!-- Left and right controls -->
+	   
+	    </div>
+	    <nav class="col-sm-12" style="padding:0">
+			  <ul style="margin-bottom:5px;">
+				<li class="col-sm-3 list-work" style="">
+					<a>
+						<img onmouseover="changeListWork('lw_01')" onmouseout="returnListWork('lw_01')" id="lw_01" src="img/top_list_works04_of.jpg" alt="" />
+					</a>
+				</li>
+				<li  class="col-sm-3 list-work" style="">
+					<a>
+						<img  onmouseover="changeListWork('lw_02')" onmouseout="returnListWork('lw_02')" id="lw_02"  src="img/top_list_works02_of.jpg" alt="" />
+					</a>
+				</li>
+				<li  class="col-sm-3 list-work" style="">
+					<a>
+						<img  onmouseover="changeListWork('lw_03')" onmouseout="returnListWork('lw_03')" id="lw_03"  src="img/top_list_works03_of.jpg" alt="" />
+					</a>
+				</li>
+				<li  class="col-sm-3 list-work" style="">
+					<a>
+						<img  onmouseover="changeListWork('lw_04')" onmouseout="returnListWork('lw_04')" id="lw_04"  src="img/top_list_works05_of.jpg" alt="" />
+					</a>
+				</li>
+			  </ul>
+        </nav>
+  </header>
+  <content class="col-sm-12" style="padding:0">
+	<aside class="col-sm-3" style="padding:0">
+		<ul class="">
+			<li class="top-h2" style="">
+				<a>
+					<img  onmouseover="changeTopH2('top_h2_01')" onmouseout="returnTopH2('top_h2_01')" id="top_h2_01"  src="img/top_h2_material_of.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img onmouseover="changeTopH2('top_h2_02')" onmouseout="returnTopH2('top_h2_02')" id="top_h2_02"  src="img/top_h2_hotline_of.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img onmouseover="changeTopH2('top_h2_03')" onmouseout="returnTopH2('top_h2_03')" id="top_h2_03"  src="img/top_h2_event_of.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img onmouseover="changeTopH2('top_h2_04')" onmouseout="returnTopH2('top_h2_04')" id="top_h2_04"  src="img/top_h2_movienews_of.gif" alt="" />
+				</a>
+			</li>
+			
+			
+			<li class="top-h2" style="">
+				<a>
+					<img src="img/top_h2_bnr01.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img src="img/top_h2_bnr03.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img src="img/top_h2_bnr04.gif" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img src="img/top_bn_intern2016.jpg" alt="" />
+				</a>
+			</li>
+			<li  class="top-h2" style="">
+				<a>
+					<img src="img/dictionary2.jpg" alt="" />
+				</a>
+			</li>
+		</ul>
+		
+	</aside>
+	<aside class="col-sm-6" id="between">
+		<div class="between-top">
+			<div class="col-sm-12 title">
+				<div class="col-sm-8 tit" style="font-weight: bold; color: #004ea2;">
+					ニュースリリース
+				</div>
+				<div class="col-sm-2 list-btn">
+					<img src="img/top_btn_all.gif" />
+				</div>
+				<div class="col-sm-2 rss" style="border-right:none;">
+					<img src="img/icon_rss.gif" />
+				</div>
+			</div>
+			<div class="list-link">
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月10日</li>
+					<li  class="col-sm-9 ">
+						<a href="">デジタルセキュリティの世界的リーダー・ジェムアルトとIoTのセキュリティで協業</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月08日</li>
+					<li class="col-sm-9 ">
+						<a href="">「DNP家計簿アプリ レシーピ！(R)」で購買履歴からおすすめ商品を提案</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月04日</li>
+					<li class="col-sm-9 ">
+						<a href="">大日本印刷とオールアバウトが企業向け「顧客コミュニケーション力強化研修」の提供を開始</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年07月27日</li>
+					<li class="col-sm-9 ">
+						<a href="">Webサイトや販促物の効率的で高品質な“DNP多言語制作支援サービス”を開始</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年07月26日</li>
+					<li class="col-sm-9 ">
+						<a href="">大日本印刷、米国Digimarc、サトー、MONICが、Digimarc Barcode(R)を活用した“未来のお買いもの”に関する協業を開始</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+		<div class="between-bottom">
+			<div class="col-sm-12 title" style="margin-top: 30px;">
+				<div class="col-sm-8 tit" style="font-weight: bold; color: #004ea2;">
+					トピックス
+				</div>
+				<div class="col-sm-2 list-btn">
+					<img src="img/top_btn_all.gif" />
+				</div>
+				<div class="col-sm-2 rss" style="border-right:none;">
+					<img src="img/icon_rss.gif" />
+				</div>
+			</div>
+			<div class="list-link">
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月10日</li>
+					<li  class="col-sm-9 ">
+						<a href="">第123期 第1四半期 四半期報告書を掲載いたしました。</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月09日</li>
+					<li class="col-sm-9 ">
+						<a href="">平成29年3月期 第1四半期決算短信を掲載いたしました。</a>
+					</li>
+				</ul>
+				
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月08日</li>
+					<li class="col-sm-9 ">
+						<a href="">◆◇◆DNPからのお知らせ◆◇◆ メディアバリューレポート最新号「オムニチャネル時代の購買行動」を発行</a>
+					</li>
+				</ul>
+				<ul>
+
+					<li class="col-sm-3 ">2016年08月01日</li>
+					<li class="col-sm-9 ">
+						<a href="">電子ペーパー「PRISM」搭載の展示品が、ソニーのコンセプト展示「eBoutique 2020」に登場</a>
+					</li>
+				</ul>
+				
+				<ul>
+
+					<li class="col-sm-3 ">2016年07月27日</li>
+					<li class="col-sm-9 ">
+						<a href="">当社子会社（株式会社インテリジェント ウェイブ）の業績予想の修正及び剰余金の配当に関するに関するお知らせ(PDF 112KB)</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		<div class="between-down">
+			
+		</div>
+	</aside>
+	<aside class="col-sm-3" style="padding-right: 0;">
+		<div class="content-right-up" style="background:url(img/bn_bg01.jpg)">
+			<ul>
+				<li><h3>DNPの社会貢献活動</h3></li>
+				<li><a><img src="img/top_bn_05.jpg" alt=""/></a></li>
+				<li><a><img src="img/top_bn_gim.jpg" alt=""/></a></li>
+				<li><a><img src="img/top_bn_02.jpg" alt=""/></a></li>
+				<li><a><img src="img/top_bn_03.jpg" alt=""/></a></li>
+				
+			<ul>
+		</div>
+		<div class="content-right-bottom">
+			<a><img src="img/event.jpg" alt=""/></a>
+		</div>		
+	</aside>
+  </content>
+  <footer class="col-sm-12">
+	<div class="col-sm-9 foot-left">
+		<div class="col-sm-12">
+					<ul class="col-sm-8">
+						<li><a href="" ><span class="glyphicon glyphicon-play"></span>サイトのご利用にあたって</a></li>
+						<li><a href="" ><span class="glyphicon glyphicon-play"></span>個人情報保護方針</a></li>
+						<li><a href="" ><span class="glyphicon glyphicon-play"></span>ソーシャルメディアポリシー</a></li>
+					</ul>
+		</div>
+	</div>
+	<div class="col-sm-3 foot-right">
+		<img style="width:100%; height:auto;" src="img/copyright.gif" alt=""/>
+	</div>
+  </footer>
+  
+</div>
+
+</body>
+</html>
