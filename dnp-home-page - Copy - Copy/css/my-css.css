@@ -1,0 +1,357 @@
+ 
+	ul , li {
+	list-style:none;
+	padding:0;
+	}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+      height:250px
+  }
+  .group-item {
+    position: absolute;
+    left: 75%;
+    top: 8%;
+    z-index: 15;
+    list-style: none;
+    max-width: 250px;
+    height: 100px;
+ }
+ 
+.group-item li {
+    width: 100%;
+    height: 40%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 10px 0;
+}
+	.group-item li:hover {
+		opacity:0.6;
+	}
+
+		.group-item li img {
+			width: 100%;
+			height: 100%;
+		}
+
+#header {
+	height:auto;
+	width:100%;
+	background: url(../img/head_bg.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.logo img {
+	height:auto;
+	width:70%;
+}
+nav {
+	width:100%;
+	font-size: 14px;
+}
+	nav ul {
+		
+		list-style:none;
+		display: inline;
+		padding: 0;
+	}
+		nav ul li{
+			display: inline;
+		}
+		nav ul img{
+			width:14%;
+			height:auto;
+		}
+
+	.content-head-left{
+		padding: 20px 0 0 40px;
+	}
+
+	.content-head-right{
+		padding: 15px 0 0 0;
+	}
+
+		.right-up {
+		    padding: 0;
+			margin-bottom: 5px;
+		}
+
+			.font-change{
+				padding-right:0;
+			}
+				.font-change dd, dt{
+					display: inline;
+					color: #fff;
+					font-size: 12px;
+				}
+				.font-change dd{
+					font-weight:bold;
+				}
+				.font-change dt{
+				font-size:11px;
+				font-weight:normal;
+				margin-right:3px;
+				}
+
+					.font-change dd span{
+						text-decoration: none;
+						color: #b6c3dc;
+						padding: 2px;
+						border: 1px solid black;
+						background: #145aa5;
+						cursor:pointer;
+					}
+					.font-change dd span.active{
+						text-decoration: none;
+						padding: 2px;
+						border: 1px solid black;
+						color: #fff;
+						background: #00a3e2
+					}
+					
+						.font-change dd span:hover{
+						color: #fff;
+						background: #00a3e2
+					}
+
+			.search-bar{
+				padding-left:0;
+			}
+				.search-bar ul {
+					list-style :none;
+					display: inline;
+					padding: 0;
+				}
+					.search-bar ul li {
+						list-style :none;
+						display: inline;
+					}
+
+				#txtSearch{
+					width: 50%;
+					padding: 2px;
+					font-size: 12px;
+					height: 19px;
+				}
+
+				.submitSearch {
+					position: absolute;
+					margin-top: 1px;
+				}
+				
+		.right-down {
+			 padding: 0;
+		}	
+			.right-down dt span{
+				color: #86a9cf;
+				border: 1px solid black;
+				padding: 2px;
+				background: #185eaa;
+				margin-left: 5px;
+				cursor:pointer;
+		}	
+			.right-down dt span:hover{
+					color: #fff;
+					background: #00a3e2
+			}
+		.right-down ul span{
+					font-size: 7px;
+					top: 0;
+					padding-right: 5px;
+		}	
+		   
+			.right-down dt {
+			    font-weight: normal;
+				font-size: 13px;
+		}
+		
+			.right-down ul {
+				padding: 0;
+			}
+				.right-down ul li{
+							display:inline;
+						    margin: 0 10px;
+					}
+					.right-down ul li a{
+							color:#fff;
+							text-decoration:none;
+							font-size: 10px;
+					}
+				
+
+
+
+.list-work{
+   padding:0;
+   
+}
+.list-work img{
+    width: 100%;
+    height: auto;
+	
+}
+
+.top-h2 {
+    margin-bottom: 5px;
+}
+.top-h2 img{
+    width: 100%;
+    height: auto;
+}
+
+.title{
+    border-top: 1px solid #004ea2;
+    border-bottom: 1px solid #004ea2;
+    padding: 5px 0px;
+}
+
+.title div{
+    border-right: 1px dotted #004ea2;
+}
+.title div image{
+    width:100%;
+	height:auto;
+}
+
+.list-link ul {
+	padding-top: 10px;
+	font-size: 13px;
+	font-family: "MS P Gothic", "ＭＳ Ｐゴシック", "Osaka－等幅", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+.list-link ul li{
+	padding-top: 20px;
+}
+.list-link ul li a{
+	text-decoration: underline;
+	color:blue;
+}
+.between-top {
+	margin-bottom:10px;
+}
+
+
+.content-right-up{
+	background: url(bn_bg01.jpg);
+    padding: 10px;
+}
+
+.content-right-up h3{
+	margin-top: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.content-right-up h3{
+	margin-top: 0;
+    font-size: 18px;
+    color: #fff;
+}
+.content-right-up img{
+	width: 100%;
+    height: auto;
+}
+
+.content-right-up ul li{
+	margin-bottom:5px;
+}
+.content-right-bottom{
+	margin-top:10px;
+	
+}
+.content-right-bottom img{
+	width: 100%;
+    height: auto;
+}
+footer {
+		padding: 10px 0px;
+		margin-top: 40px;
+		border-top: 1px solid black;
+}
+.foot-left{
+		padding:0;
+}
+.foot-left a{
+		color:black;
+		font-size:11px;
+}
+.foot-left ul li{
+		display:inline;
+		margin-right:20px;
+}
+.foot-left span{
+		font-size: 7px;
+		top: 0px;
+}
+
+.foot-left div{
+		padding:0;
+}
+.foot-left div ul{
+		padding:0;
+}
+
+.foot-right{
+    padding-left: 100px;
+	padding-right: 0px;
+}   
+
+
+@media screen and (max-width: 750px) {
+		#txtSearch {
+			width: 50%;
+			margin-left: 15px;
+		 }
+
+		.logo img {
+			width: 50%;
+		}
+		.right-down ul {
+			margin-left: 10px;
+		}
+		.search-bar {
+			margin-top: 5px;
+		}
+		.right-down ul li {
+			font-size: 7px;
+		}
+		.tit{
+		    width: 50%;
+			display: inline;
+		}
+		.list-btn{
+		    width: 50%;
+			display: inline;
+		}
+		.rss{
+			    width: 50%;
+				display: inline;
+		}
+}
+
+@media screen and (max-width: 510px) {
+			nav ul img {
+			width: 13%;
+		}
+}
+
+@media screen and (max-width: 400px) {
+	.logo-print-li{
+		width: 50%;
+	}
+	.logo-print-li img{
+		width:100%;
+		height: auto;
+	}
+	
+		
+}
+
+.tit{}
+.list-btn{}
+.rss{}
+
+content{
+	style="padding:0";
+	margin-top: 20px;
+}
